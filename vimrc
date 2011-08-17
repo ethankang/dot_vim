@@ -72,3 +72,6 @@ nnoremap <C-l> <C-w>l
 
 " map for Command-T
 map <D-e> :CommandT<CR>
+
+" set session
+set sessionoptions=buffers,curdir,folds
