@@ -52,7 +52,7 @@ map <C-TAB>  gt
 "map <c-w><c-w> :WMToggle<cr> 
 "map <c-w><c-f> :FirstExplorerWindow<cr> 
 "map <c-w><c-b> :BottomExplorerWindow<cr> 
-"let g:AutoOpenWinManager = 1
+let g:AutoOpenWinManager = 0
 
 " NERDTree
 map <c-w><c-w> :NERDTreeToggle<cr> 
@@ -71,7 +71,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " map for Command-T
-map <D-e> :CommandT<CR>
+" map <D-e> :CommandT<CR>
 
 " set session
 set sessionoptions=buffers,curdir,folds
