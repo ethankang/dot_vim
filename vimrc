@@ -36,13 +36,19 @@ set hlsearch
 set colorcolumn=80
 
 
+noremap H ^
+noremap L $
 imap <D-/>  <C-x><C-o>
 map <D-F12>  :!open -a /Applications/Firefox.app/ % &<CR>
 map <C-TAB>  gt
 
+"map <F<F3>>  :make<CR>:copen<CR>
 " auto save file
 " au FocusLost * :wa
 
+" ruby block
+""""""""""""""""""""""""""
+:runtime macros/matchit.vim 
 
 " winManager Setting
 """"""""""""""""""""""""""
