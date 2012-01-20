@@ -1,5 +1,21 @@
 set nocompatible
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show unicode glyphs
 
+" let Vundle manage Vundle
+" ------------------------------
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" -------------------------------------
+"
+" Bundles Plugin
+"
+" -------------------------------------
+Bundle "git://github.com/Lokaltog/vim-powerline.git"
+Bundle 'Lokaltog/vim-easymotion'
 
 colorscheme molokai
 let g:molokai_original = 1
@@ -41,6 +57,7 @@ noremap L $
 imap <D-/>  <C-x><C-o>
 map <D-F12>  :!open -a /Applications/Firefox.app/ % &<CR>
 map <C-TAB>  gt
+map <F3> :mks! .vim_session<CR>
 
 "map <F<F3>>  :make<CR>:copen<CR>
 " auto save file
